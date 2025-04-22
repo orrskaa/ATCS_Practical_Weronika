@@ -92,7 +92,7 @@ ATCS_practical/
 
 ```bash
 python train.py --model <model_name>
-for example: python train.py --model avg_glove
+--> example: python train.py --model avg_glove
 # Or use SLURM:
 sbatch run_avg_glove.sh
 ```
@@ -105,7 +105,7 @@ Model checkpoints are saved to `checkpoints/<model_name>.pt`.
 
 ```bash
 python eval.py --model <model_name> --checkpoint checkpoints/<model_name>.pt
-for example: python eval.py --model avg_glove --checkpoint checkpoints/avg_glove.pt
+--> example: python eval.py --model avg_glove --checkpoint checkpoints/avg_glove.pt
 # Or via SLURM:
 sbatch eval_avg_glove.sh
 ```
@@ -116,7 +116,7 @@ sbatch eval_avg_glove.sh
 
 ```bash
 python senteval_eval.py --model <model_name> --checkpoint checkpoints/<model_name>.pt
-for example: python eval.py --model avg_glove --checkpoint checkpoints/avg_glove.pt
+--> example: python eval.py --model avg_glove --checkpoint checkpoints/avg_glove.pt
 # Or via SLURM:
 sbatch eval_senteval_avg_glove.sh
 ```
@@ -133,17 +133,17 @@ Training logs are saved to `runs/`.
 tensorboard --logdir=runs
 ```
 
-📸 [TensorBoard Screenshots (Google Drive)](https://drive.google.com/drive/folders/1Uyn8ah_Q7cqe3bnAHNgaO1Ev7XHtfFYU)
+ [TensorBoard Screenshots (Google Drive)](https://drive.google.com/drive/folders/1Uyn8ah_Q7cqe3bnAHNgaO1Ev7XHtfFYU)
 
 ---
 
 ## Deliverables
 
-- ✅ Implemented 4 models for NLI using GloVe + LSTM variations
-- ✅ Evaluated models on SNLI test set and SentEval tasks
-- ✅ TensorBoard logging
-- ✅ Modular and extensible codebase
-- ✅ Unit tests for preprocessing & utilities
+- Implemented 4 models for NLI using GloVe + LSTM variations
+- Evaluated models on SNLI test set and SentEval tasks
+- TensorBoard logging
+- Modular and extensible codebase
+- Unit tests for preprocessing & utilities
 
 ---
 
