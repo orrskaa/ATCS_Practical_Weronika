@@ -109,6 +109,7 @@ python eval.py --model <model_name> --checkpoint checkpoints/<model_name>.pt
 # Or via SLURM:
 sbatch eval_avg_glove.sh
 ```
+[Checkpoints (Google Drive)]https://drive.google.com/drive/folders/19dK5SZw9Qir3p6Up_CFfg5LNlldoXqQ9
 
 ---
 
