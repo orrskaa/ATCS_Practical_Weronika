@@ -1,6 +1,6 @@
 # ATCS Practical – Sentence Embeddings with SNLI and SentEval
 
-This repository contains the implementation of multiple neural models for Natural Language Inference (NLI) using the SNLI dataset. It also evaluates sentence embeddings using the SentEval toolkit across a suite of transfer tasks.
+This repository contains the implementation of multiple neural models for Natural Language Inference (NLI) using the SNLI dataset. It also evaluates sentence embeddings using the SentEval toolkit across various transfer tasks. The SNLI dataset consists of 570,000 labeled sentence pairs with three balanced classes: entailment, contradiction, and neutral. Each model uses fixed 300-dimensional GloVe word embeddings pretrained on Common Crawl (840B tokens).
 
 ---
 
