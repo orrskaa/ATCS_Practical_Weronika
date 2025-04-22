@@ -147,6 +147,6 @@ tensorboard --logdir=runs
 
 ---
 
-## Authors
+## Author
 Weronika Orska
 Univerity of Amsterdam
