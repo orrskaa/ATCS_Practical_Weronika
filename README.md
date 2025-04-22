@@ -72,7 +72,7 @@ ATCS_practical/
 ├── eval.py                     # Evaluation on SNLI test set
 ├── senteval_eval.py            # Evaluation on SentEval tasks
 ├── requirements.txt            # Python dependencies
-└── README.md                   # You are here 🚀
+└── README.md                   # You are here
 ```
 
 ---
