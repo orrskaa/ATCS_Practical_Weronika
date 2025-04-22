@@ -4,19 +4,19 @@ This repository contains the implementation of multiple neural models for Natura
 
 ---
 
-## 📦 Requirements & Setup
+## Requirements & Setup
 
-### 📁 Clone and Environment Setup
+### Clone and Environment Setup
 
 ```bash
-git clone <your_repo_url>
+git clone <[your_repo_url](https://github.com/orrskaa/ATCS_Practical_Weronika.git)>
 cd ATCS_practical
 python3 -m venv atcs_env
 source atcs_env/bin/activate
 pip install -r requirements.txt
 ```
 
-### 🧠 Additional Dependencies
+### Additional Dependencies
 
 - Install `torch`, `transformers`, `nltk`, `senteval`, and `tensorboard`
 - Make sure to run once:
@@ -26,12 +26,12 @@ import nltk
 nltk.download('punkt')
 ```
 
-### 🔤 Download GloVe Embeddings
+### Download GloVe Embeddings
 
-Place the GloVe 840B 300d vectors in `data/glove.840B.300d.txt`. You can download them from:
+Upload the GloVe 840B 300d vectors in `data/glove.840B.300d.txt`. You can download them from:
 https://nlp.stanford.edu/projects/glove/
 
-### 📚 Download SentEval Tasks
+### Download SentEval Tasks
 
 ```bash
 cd ATCS_practical
@@ -49,7 +49,7 @@ PATH_TO_DATA = os.path.join(os.getcwd(), 'senteval_data/data')
 
 ---
 
-## 📁 Code Structure
+## Code Structure
 
 ```
 ATCS_practical/
@@ -77,7 +77,7 @@ ATCS_practical/
 
 ---
 
-## 🧠 Models Implemented
+## Models Implemented
 
 | Model         | Description                       |
 |---------------|-----------------------------------|
@@ -88,10 +88,11 @@ ATCS_practical/
 
 ---
 
-## 🏋️ Train Models
+## Train Models
 
 ```bash
 python train.py --model <model_name>
+for example: python train.py --model avg_glove
 # Or use SLURM:
 sbatch run_avg_glove.sh
 ```
@@ -100,20 +101,22 @@ Model checkpoints are saved to `checkpoints/<model_name>.pt`.
 
 ---
 
-## 🧪 Evaluate on SNLI Test Set
+## Evaluate on SNLI Test Set
 
 ```bash
 python eval.py --model <model_name> --checkpoint checkpoints/<model_name>.pt
+for example: python eval.py --model avg_glove --checkpoint checkpoints/avg_glove.pt
 # Or via SLURM:
 sbatch eval_avg_glove.sh
 ```
 
 ---
 
-## 📊 Evaluate with SentEval
+## Evaluate with SentEval
 
 ```bash
 python senteval_eval.py --model <model_name> --checkpoint checkpoints/<model_name>.pt
+for example: python eval.py --model avg_glove --checkpoint checkpoints/avg_glove.pt
 # Or via SLURM:
 sbatch eval_senteval_avg_glove.sh
 ```
@@ -122,7 +125,7 @@ Results are saved to `senteval_results_<model_name>.txt`.
 
 ---
 
-## 📈 TensorBoard Visualizations
+## TensorBoard Visualizations
 
 Training logs are saved to `runs/`.
 
@@ -134,7 +137,7 @@ tensorboard --logdir=runs
 
 ---
 
-## ✅ Deliverables
+## Deliverables
 
 - ✅ Implemented 4 models for NLI using GloVe + LSTM variations
 - ✅ Evaluated models on SNLI test set and SentEval tasks
@@ -144,7 +147,6 @@ tensorboard --logdir=runs
 
 ---
 
-## 👨‍💻 Authors
-
-- scur0692 (Snellius user)
-- Assistance by ChatGPT 😉
+## Authors
+Weronika Orska
+Univerity of Amsterdam
