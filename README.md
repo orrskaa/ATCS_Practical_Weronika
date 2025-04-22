@@ -9,7 +9,7 @@ This repository contains the implementation of multiple neural models for Natura
 ### Clone and Environment Setup
 
 ```bash
-git clone <[your_repo_url](https://github.com/orrskaa/ATCS_Practical_Weronika.git)>
+git clone <(https://github.com/orrskaa/ATCS_Practical_Weronika.git)>
 cd ATCS_practical
 python3 -m venv atcs_env
 source atcs_env/bin/activate
