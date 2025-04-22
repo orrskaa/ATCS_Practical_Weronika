@@ -4,9 +4,9 @@ This repository contains the implementation of multiple neural models for Natura
 
 ---
 
-## 📦 Requirements & Setup
+## Requirements & Setup
 
-### 📁 Clone and Environment Setup
+### Clone and Environment Setup
 
 ```bash
 git clone <your_repo_url>
